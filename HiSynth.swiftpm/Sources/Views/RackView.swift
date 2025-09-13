@@ -120,7 +120,7 @@ struct RackView: View {
                 }.padding(.leading, 7.5)
                     .padding(.trailing, 0.0)
                     .onAppear {
-                        controller.setSong(controller.songs[0], play: true)
+                        controller.setSong(controller.songs[0], play: false)
                     }
             }
 
