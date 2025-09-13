@@ -65,7 +65,7 @@ struct HSSlider: View {
         return ZStack {
             // Ticks
             VStack {
-                ForEach(0..<numberOfTicks) {index in
+                ForEach(0..<numberOfTicks, id: \.self) {index in
                     Rectangle().fill(Theme.colorGray4)
                         .cornerRadius(4.0)
                         .frame(width: width, height: 2.0)

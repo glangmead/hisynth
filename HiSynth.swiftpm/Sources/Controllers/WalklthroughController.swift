@@ -83,7 +83,7 @@ enum HSComponent: Int8 {
 
 class WalkthroughController: ObservableObject {
 
-    @Published var presentWelcome = true
+    @Published var presentWelcome = false
     @Published var presentOscHelp = false
     @Published var presentEnvHelp = false
     @Published var presentFilterHelp = false

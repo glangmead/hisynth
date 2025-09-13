@@ -28,7 +28,7 @@ struct ContentView: View {
                                 AFXPanel(controller: core.afxController)
                                 PresetPanel(controller: core.presetController!)
                             }.padding(4.0)
-                        }.onChange(of: walkthrough.scrollTarget) { target in
+                        }.onChange(of: walkthrough.scrollTarget) { oldTarget, target in
                             withAnimation {
                                 proxy.scrollTo(target)
                             }

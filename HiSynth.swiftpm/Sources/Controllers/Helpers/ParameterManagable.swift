@@ -52,7 +52,7 @@ extension ParameterManagable {
                 data.append(Data(bytes: &float16v, count: sizeof(float16v)))
             } else if var v = child.value as? Bool {
                 data.append(Data(bytes: &v, count: sizeof(v)))
-            } else if var v = child.value as? HSEnum {
+            } else if let v = child.value as? HSEnum {
                 var rawValue = v.rawValue
                 data.append(Data(bytes: &rawValue, count: sizeof(rawValue)))
             } else if let v = child.value as? [Float] {
