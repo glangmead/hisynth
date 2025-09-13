@@ -1,1 +1,5 @@
 **/.swiftpm
+.DS_Store
+Build/
+DerivedData/
+xcuserdata/
